@@ -10,7 +10,7 @@ const form = ref({
 })
 
 const handleLogin = async() => {
-  await axios.post('/login', {
+  await axios.get('/login', {
     email: form.value.email,
     password: form.value.password
   });
